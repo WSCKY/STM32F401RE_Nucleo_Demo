@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\CODE\Keil MDK\STM32F401RE-nucleo\MyProj\Ext_LCD_PicDec\proj\picdec.uvproj
+Project File Date:  09/25/2014
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=21980 RO-data=4100 RW-data=540 ZI-data=36252  
+".\opt\picdec.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CODE\\Keil MDK\\STM32F401RE-nucleo\\MyProj\\Ext_LCD_PicDec\\proj\\opt\\picdec.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
+ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_spi.c...
+compiling diskio.c...
+compiling ff.c...
+compiling ff_gen_drv.c...
+compiling sd_diskio.c...
+compiling bmp.c...
+compiling gif.c...
+compiling jpeg.c...
+compiling piclib.c...
+linking...
+Program Size: Code=21980 RO-data=4100 RW-data=540 ZI-data=36252  
+".\opt\picdec.axf" - 0 Error(s), 0 Warning(s).
+)filename, FA_READ);
+..\Picture\gif.c: 0 warnings, 4 errors
+compiling jpeg.c...
+..\Picture\jpeg.c(61): error:  #20: identifier "XCHAR" is undefined
+        res = f_open(f_jpeg, (const XCHAR*)filename, FA_OPEN_EXISTING | FA_READ);/* 打开文件 */
+..\Picture\jpeg.c: 0 warnings, 1 error
+compiling piclib.c...
+".\opt\picdec.axf" - 7 Error(s), 0 Warning(s).
+Target not created
+ling jpeg.c...
+..\Picture\jpeg.c(16): error:  #20: identifier "u8" is undefined
+  const u8 And[9]={0,1,3,7,0xf,0x1f,0x3f,0x7f,0xff};
+..\Picture\jpeg.c(30): error:  #20: identifier "u32" is undefined
+  u32           sizei,sizej;
+..\Picture\jpeg.c(31): error:  #20: identifier "u8" is undefined
+  u8            comp_index[3];
+..\Picture\jpeg.c(32): error:  #20: identifier "u8" is undefined
+  u8            YDcIndex,YAcIndex,UVDcIndex,UVAcIndex;
+..\Picture\jpeg.c(33): error:  #20: identifier "u8" is undefined
+  u8            HufTabIndex;
+..\Picture\jpeg.c(34): error:  #20: identifier "u8" is undefined
+  u8            *lp;            /* 取代lpJpegBuf */
+..\Picture\jpeg.c(35): error:  #20: identifier "u8" is undefined
+  u8            IntervalFlag;
+..\Picture\jpeg.c(42): error:  #20: identifier "u16" is undefined
+  u16           huf_max_value[4][16],huf_min_value[4][16];
+..\Picture\jpeg.c(47): error:  #20: identifier "u16" is undefined
+  u16           code_value_table[4][256];
+..\Picture\jpeg.c(49): error:  #20: identifier "u8" is undefined
+  u8            jpg_buffer[1024];                               //数据缓存区
+..\Picture\jpeg.c(56): error:  #20: identifier "u8" is undefined
+  u8 jpg_decode(const u8 *filename)
+..\Picture\jpeg.c(56): error:  #20: identifier "u8" is undefined
+  u8 jpg_decode(const u8 *filename)
+..\Picture\jpeg.c(58): error:  #20: identifier "u8" is undefined
+        u8 res = 0;
+..\Picture\jpeg.c(59): error:  #20: identifier "u16" is undefined
+        u16 byre;
+..\Picture\jpeg.c(61): error:  #20: identifier "XCHAR" is undefined
+        res = f_open(f_jpeg, (const XCHAR*)filename, FA_OPEN_EXISTING | FA_READ);/* 打开文件 */
+..\Picture\jpeg.c(87): error:  #20: identifier "u8" is undefined
+  void jpg_seek(u8 *pbase, u8 **pnow)
+..\Picture\jpeg.c(87): error:  #20: identifier "u8" is undefined
+  void jpg_seek(u8 *pbase, u8 **pnow)
+..\Picture\jpeg.c(89): error:  #20: identifier "u32" is undefined
+        u32 pos;
+..\Picture\jpeg.c(90): error:  #20: identifier "u16" is undefined
+        u16 offset;
+..\Picture\jpeg.c(104): error:  #20: identifier "u8" is undefined
+        u8 finish = FALSE;
+..\Picture\jpeg.c(105): error:  #20: identifier "u8" is undefined
+        u8 id;
+..\Picture\jpeg.c(110): error:  #20: identifier "u8" is undefined
+        u8 hf_table_index;
+..\Picture\jpeg.c(111): error:  #20: identifier "u8" is undefined
+        u8 qt_table_index;
+..\Picture\jpeg.c(112): error:  #20: identifier "u8" is undefined
+        u8 comnum;//最长为256个字节
+..\Picture\jpeg.c(114): error:  #20: identifier "u8" is undefined
+        u8  *lptemp;             
+..\Picture\jpeg.c(114): error:  #20: identifier "lptemp" is undefined
+        u8  *lptemp;             
+..\Picture\jpeg.c(505): error:  #20: identifier "u8" is undefined
+        u8 R, G, B;
+..\Picture\jpeg.c(507): error:  #20: identifier "u16" is undefined
+        u16 color;
+..\Picture\jpeg.c(508): error:  #20: identifier "u16" is undefined
+        u16 realx = sizej;/* x,y的实际坐标 */
+..\Picture\jpeg.c(509): error:  #20: identifier "u16" is undefined
+        u16 realy = 0;    
+..\Picture\jpeg.c: 0 warnings, 30 errors
+compiling piclib.c...
+..\Picture\piclib.c(37): warning:  #513-D: a value of type "uint16_t (*)(uint8_t, uint8_t)" cannot be assigned to an entity of type "uint16_t (*)(uint16_t, uint16_t)"
+        pic_phy.read_point = ReadPoint;                         //读点函数实现
+..\Picture\piclib.c(38): warning:  #513-D: a value of type "void (*)(uint8_t, uint8_t, uint16_t)" cannot be assigned to an entity of type "void (*)(uint16_t, uint16_t, uint16_t)"
+        pic_phy.draw_point = DrawPiont;                         //画点函数实现
+..\Picture\piclib.c: 2 warnings, 0 errors
+".\opt\picdec.axf" - 33 Error(s), 2 Warning(s).
+Target not created

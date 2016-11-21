@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+".\objects\startup_stm32f401xe.o"
+".\objects\main.o"
+".\objects\stm32f4xx_it.o"
+".\objects\system_stm32f4xx.o"
+".\objects\stm32f4xx_nucleo.o"
+".\objects\stm32f4xx_nucleo_extlcd.o"
+".\objects\stm32f4xx_nucleo_ext25q16.o"
+".\objects\stm32f4xx_nucleo_extrc522.o"
+".\objects\stm32f4xx_nucleo_extlcdbk.o"
+".\objects\stm32f4xx_hal.o"
+".\objects\stm32f4xx_hal_cortex.o"
+".\objects\stm32f4xx_hal_dma.o"
+".\objects\stm32f4xx_hal_dma_ex.o"
+".\objects\stm32f4xx_hal_flash.o"
+".\objects\stm32f4xx_hal_flash_ex.o"
+".\objects\stm32f4xx_hal_gpio.o"
+".\objects\stm32f4xx_hal_pwr.o"
+".\objects\stm32f4xx_hal_pwr_ex.o"
+".\objects\stm32f4xx_hal_rcc.o"
+".\objects\stm32f4xx_hal_rcc_ex.o"
+".\objects\stm32f4xx_hal_spi.o"
+".\objects\stm32f4xx_hal_tim.o"
+".\objects\stm32f4xx_hal_tim_ex.o"
+--library_type=microlib --strict --scatter ".\Objects\mfrc522.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\mfrc522.map" -o .\Objects\mfrc522.axf

@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+".\opt\stm32f4xx_hal.o"
+".\opt\stm32f4xx_hal_cortex.o"
+".\opt\stm32f4xx_hal_crc.o"
+".\opt\stm32f4xx_hal_dma.o"
+".\opt\stm32f4xx_hal_flash.o"
+".\opt\stm32f4xx_hal_flash_ex.o"
+".\opt\stm32f4xx_hal_gpio.o"
+".\opt\stm32f4xx_hal_rcc.o"
+".\opt\stm32f4xx_hal_rcc_ex.o"
+".\opt\stm32f4xx_hal_sd.o"
+".\opt\stm32f4xx_hal_spi.o"
+".\opt\stm32f4xx_ll_sdmmc.o"
+".\opt\stm32f4xx_nucleo.o"
+".\opt\vs1003.o"
+".\opt\sdcard.o"
+".\opt\startup_stm32f401xe.o"
+".\opt\main.o"
+".\opt\stm32f4xx_it.o"
+".\opt\system_stm32f4xx.o"
+".\opt\diskio.o"
+".\opt\ff.o"
+".\opt\ff_gen_drv.o"
+".\opt\sd_diskio.o"
+--library_type=microlib --strict --scatter ".\opt\MP3.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\opt\MP3.map" -o .\opt\MP3.axf

@@ -1,0 +1,7 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\main -I..\..\Drivers\BSP\STM32F4xx-Nucleo -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\Ext_Board\inc -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS -I..\..\Middlewares\Third_Party\FreeRTOS\Source\include -I..\..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F --c99
+-I "D:\CODE\Keil MDK\STM32F401RE_Nucleo_Demo\MyProj\Ext_FreeRTOS\proj\RTE"
+-I "D:\KEIL MDK\Setup\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"
+-I "D:\KEIL MDK\Setup\ARM\CMSIS\Include"
+-I "D:\KEIL MDK\Setup\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\Device\Include"
+-DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE -DUSE_STM32F4XX_NUCLEO
+-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d "..\main\main.c"
